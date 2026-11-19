@@ -9,14 +9,14 @@ textview text {
 }
 
 entry { 
-    font-size: 46px; padding-bottom: 13px; color: rgb(35, 24, 15);
+    font-size: 46px; padding-bottom: 19px; color: rgb(35, 24, 15);
     padding-left: 0; margin-left: 0;
     
 
 }
 
 textview{
-    font-size: 20px;
+    font-size: 20px; padding-left: 4px;
 }
 textview text{
     color: #533f28;
