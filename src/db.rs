@@ -38,7 +38,13 @@ pub fn init_db() -> Result<()> {
 
 }
 
+pub fn delete_note(id:i32) -> Result<()> {
+    
+    let conn: Connection = Connection::open(DIRS.data_dir().join("db.sqlite"))?;
+    conn.execute("DELETE FROM notes WHERE id=?", (id,))?;
 
+    Ok(())
+}
 
 
 pub fn get_notes() -> rusqlite::Result<(HashMap<i32, (String, String)>, Option<i32>)> {
